@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  overflow-y: scroll; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+body::-webkit-scrollbar {
+  width: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  scrollbar-width: none; 
+}
+
+
+.app {
+  overflow-y: auto; 
+  height: 100%; 
+}
+
+
+.top-nav {
+  background-color: #f8f9fa;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: none;
+  border-bottom: none; 
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links ul,
+.recruiter-actions ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  height: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-links ul li {
+  cursor: pointer;
+  padding: 20px;
+}
+
+.recruiter {
+  margin-right: 20px; 
+}
+
+.post-job {
+  margin-right: 50px;
+}
+
+.nav-links {
+  margin-left: 50px;
+}
+
+.employers,
+.colleges {
+  color: #000000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.job-seekers {
+  color: #00203F;
+  cursor: pointer;
+  padding: 16px;
+  font-weight: 600;
+  border-bottom: 5px solid #2AF598;
+  margin-bottom: 2px;
+  padding-bottom: 10px;
+}
+
+.nav-links ul li:hover {
+  color: #2AF598;
+}
+
+.recruiter-actions ul li a {
+  text-decoration: none;
+  color: #00203F;
+  font-weight: 600;
+}
+
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px; 
+}
+
+
+.info-sidebar {
+  width: 20%;
+  padding: 20px;
+}
+
+.info-box {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 20px;
 }

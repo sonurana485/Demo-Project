@@ -1,0 +1,65 @@
+.job-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px #0000000d;
+  border-radius: 8px;
+  flex-direction: column;
+  backdrop-filter: blur(30px);
+  background-color: #FFFFFF;
+  }
+  
+  .job-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .company-logo {
+    width: 70px;
+    height: 40px;
+    display: flex;
+    padding-bottom: 6px;
+    margin-right: 10px;
+  }
+  
+  .job-card-title h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #00203F;
+  }
+  
+  .job-card-details {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .job-card-details p,
+  .wfh-status,
+  .job-card-date {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .job-card-details p i,
+  .wfh-status i,
+  .job-card-date i {
+    margin-right: 5px;
+    color: #6c757d; /* Optional: Set a color for icons */
+  }
+  
+  .wfh-status {
+    margin-top: 5px;
+  }
+  
+  .job-card-date {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+    color: gray;
+    font-size: 0.9rem;
+  }
+  

@@ -1,0 +1,46 @@
+.job-list{
+    margin-top: 20px;
+    width: 50%;
+}
+  
+  .job-list-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; 
+  }
+  
+  .job-list-header h2 {
+    margin: 0; 
+    flex-grow: 1; 
+  }
+  
+  select {
+    margin-left: 1rem; 
+    padding: 0.5rem; 
+  }
+
+  .pagination-controls {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .pagination-controls button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .pagination-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination-controls span {
+    align-self: center;
+  }
+  
+  
